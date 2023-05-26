@@ -3,7 +3,7 @@ import Sectiontitle from '../Shared/Sectiontitle/Sectiontitle';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation , Pagination } from "swiper";
+import { Navigation } from "swiper";
 
 
 const Feedback = () => {
@@ -22,9 +22,6 @@ const Feedback = () => {
                     navigation={true}
                     slidesPerView={1}
                     spaceBetween={10}
-                  /*   pagination={{
-                      clickable: true,
-                    }} */
                     breakpoints={{
                       640: {
                         slidesPerView: 1,
@@ -68,7 +65,6 @@ const Feedback = () => {
                                 </div>
                             </SwiperSlide>)
                     }
-
                 </Swiper>
 
 
