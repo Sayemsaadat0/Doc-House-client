@@ -3,7 +3,7 @@ import React from 'react';
 const Futar = () => {
     return (
         <footer className="footer md:flex justify-evenly p-10 bg-base-200 mt-24">
-            <div className='w-1/4'>
+            <div className='md:w-1/4'>
             <h1 className='text-3xl font-bold text-[#f68d60d3]'>
                     Doc <span className='text-black'>House</span>
                 </h1>

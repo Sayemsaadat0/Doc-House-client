@@ -12,7 +12,7 @@ const Banner = () => {
                         <p className='mb-4  md:w-[75%] mx-auto'>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint corrupti ipsa eius at, sunt aliquid aspernatur tenetur aperiam architecto ipsam.
                         </p>
-                        <div className='mx-20'>
+                        <div className='md:mx-20'>
                         <button className='font-semibold bg-[#f68d60d3] mx-auto btn'>
                             All Services
                         </button>
