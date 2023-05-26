@@ -6,7 +6,7 @@ import ProfileTab from './ProfileTab';
 
 const DoctorProfile = () => {
     return (
-        <section className='mb-0'>
+        <section className=''>
             <Cover 
             title={'Doctor Profile'} 
             subTitle={'Home/Doctor Profile'}></Cover>
