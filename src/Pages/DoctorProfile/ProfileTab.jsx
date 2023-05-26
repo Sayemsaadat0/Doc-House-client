@@ -5,14 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import useReview from '../../Hooks/UseReview';
 
 const ProfileTab = () => {
-    const [reviews, setReviews] = useState([])
-    useEffect(() => {
-        fetch('Feedback.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
+    const [review] = useReview()
     return (
         <section className='h-screen px-10'>
             <Tabs className='p-10 bg-base-200  '>
@@ -146,7 +142,7 @@ const ProfileTab = () => {
                                     modules={[Navigation]}
                                     className="mySwiper">
                                     {
-                                        reviews.map(review =>
+                                        review.map(review =>
                                             <SwiperSlide key={review._id}>
                                                 <div className="flex flex-col w-full lg:flex-row">
                                                     {/* divider 1 */}
