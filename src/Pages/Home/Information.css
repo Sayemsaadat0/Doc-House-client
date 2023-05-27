@@ -1,0 +1,11 @@
+.single_card{
+    border-radius: 17px;
+    box-shadow:  -13px 13px 26px #bddfb0,
+                 13px -13px 26px #ffffff; 
+}
+.single_card:hover{
+    border-radius: 17px;
+    scale: 110%;
+    box-shadow:  -13px 13px 26px #e9ede8,
+                 13px -13px 26px #dcffc8; 
+}

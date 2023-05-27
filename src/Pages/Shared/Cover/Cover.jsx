@@ -1,5 +1,5 @@
 import React from 'react';
-// import bgImage from '../../../assets/shareed/scattered-forcefields.png'
+import Image from '../../../assets/shareed/Doctor_Flatline.svg'
 import './Cover.css'
 
 const Cover = ({ title, subTitle }) => {

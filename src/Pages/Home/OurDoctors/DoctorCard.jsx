@@ -2,6 +2,7 @@ import React from 'react';
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
 import useDetails from '../../../Hooks/UseDetails';
+import './Doctor.css'
 
 
 const DoctorCard = () => {
@@ -31,7 +32,7 @@ const DoctorCard = () => {
                             </div>
                         </div>
                         <div>
-                            <button className='btn absolute bottom-0 w-full '>view details</button>
+                            <button className='w-full absolute bottom-1 view_details'>view details</button>
                         </div>
                     </div>
 
