@@ -7,7 +7,6 @@ import useReview from '../../Hooks/UseReview';
 
 const FeedbackSlide = () => {
     const [review] = useReview()
-    console.log(review)
     return (
         <Swiper
         navigation={true}

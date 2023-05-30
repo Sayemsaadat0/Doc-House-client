@@ -3,10 +3,14 @@ import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
 import useDetails from '../../../Hooks/UseDetails';
 import './Doctor.css'
+import { Link } from 'react-router-dom';
+
 
 
 const DoctorCard = () => {
     const [details] = useDetails()
+   
+   
     return (
         <div className=''>
             <Flicking
@@ -32,7 +36,9 @@ const DoctorCard = () => {
                             </div>
                         </div>
                         <div>
-                            <button className='w-full absolute bottom-1 view_details'>view details</button>
+                           <Link to={`/profile/${detail._id}`}>
+                           <button className='w-full absolute bottom-1 view_details'>view details</button>
+                           </Link>
                         </div>
                     </div>
 

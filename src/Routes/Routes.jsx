@@ -6,6 +6,7 @@ import Register from "../Pages/Authentication/Register/Register";
 import DoctorProfile from "../Pages/DoctorProfile/DoctorProfile";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
+import Appoinment from "../Pages/Appoinment/Appoinment";
 
 
 const router = createBrowserRouter([
@@ -19,8 +20,13 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/profile',
-                element: <PrivateRoute><DoctorProfile></DoctorProfile></PrivateRoute>
+                path: 'appoinment',
+                element: <Appoinment></Appoinment>
+            },
+            {
+                path: '/profile/:id',
+                element: <PrivateRoute><DoctorProfile></DoctorProfile></PrivateRoute>,
+                loader: ({params})=> fetch(`http://localhost:6969/profile/${params.id}`)
             },
         ]
     },

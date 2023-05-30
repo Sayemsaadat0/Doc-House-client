@@ -3,8 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import FeedbackSlide from '../Home/FeedbackSlide';
 import OverViewTab from './OverViewTab';
+import { useLoaderData } from 'react-router-dom';
 
 const ProfileTab = () => {
+
 
     return (
         <section className='h-screen px-10'>

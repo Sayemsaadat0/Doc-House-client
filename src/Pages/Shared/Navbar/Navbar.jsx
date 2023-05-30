@@ -24,7 +24,8 @@ const Navbar = () => {
                     <NavLink className='mx-3' to='/register'>register</NavLink>
                 </>
         }
-        <NavLink className='mx-3' to='/profile'>Doctor Profile</NavLink>
+        <NavLink className='mx-3' to={`/profile/${'6470eceec53fe174d1320a8b'}`}>Doctor Profile</NavLink>
+        <NavLink className='mx-3' to='/appoinment'>Appoinment</NavLink>
     </>
 
 
