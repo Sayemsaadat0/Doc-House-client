@@ -7,7 +7,7 @@ const ErrorPage = () => {
             <img src="https://i.ibb.co/3szZjrH/woops.png" alt="" />
 
             <div className='mt-5 flex justify-center'>
-                <button class="error-btn">
+                <button className="error-btn">
                   <Link className='box' to='/'>Go back Home</Link>
                 </button>
             </div>

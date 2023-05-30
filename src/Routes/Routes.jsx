@@ -5,6 +5,7 @@ import Login from "../Pages/Authentication/Login/Login";
 import Register from "../Pages/Authentication/Register/Register";
 import DoctorProfile from "../Pages/DoctorProfile/DoctorProfile";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -19,18 +20,19 @@ const router = createBrowserRouter([
             },
             {
                 path: '/profile',
-                element: <DoctorProfile></DoctorProfile>
-            },
-            {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
-                path: '/register',
-                element: <Register></Register>
+                element: <PrivateRoute><DoctorProfile></DoctorProfile></PrivateRoute>
             },
         ]
     },
+    {
+        path: '/login',
+        element: <Login></Login>
+    },
+    {
+            path: '/register',
+            element: <Register></Register>
+     
+    }
 ]);
 
 
